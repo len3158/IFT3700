@@ -1,0 +1,3 @@
+determiner le bon nombre de clusters sur k moyenne et k medoids :
+
+On utilise "elbow method"

@@ -1,0 +1,11 @@
+Rapport devoir IFT3700
+
+Pour la partition binaire, on utilise l’algorithme de la classification ascendante hiérarchique(hierarchical agglomerative clustering) avec la variation basée sur la moyenne des distances(average linkage).
+On crée d’abord le dendrogramme avec les données de MNIST et normalement, on utilise ce graphique afin de trouver le nombre de clusters à mettre comme paramètre. Par contre, puisque dans ce cas, nous savons
+déjà qu’il aura dix clusters(dix chiffres), on passe à créer le regroupement hiérarchique. D’abord, on utilise les données de mnist pour créer une matrice de similarité en 2D puisque l’algorithme HAC de la
+librairie scikit doit prendre une matrice x par deux. On a normalisé les données car il est avisé de le faire avant de créer les clusters pour être sûr que les distances soient dans la même intervalle.
+
+sources utilisées : 
+https://scikit-learn.org/stable/auto_examples/cluster/plot_digits_linkage.html#sphx-glr-download-auto-examples-cluster-plot-digits-linkage-py
+https://www.analyticsvidhya.com/blog/2019/05/beginners-guide-hierarchical-clustering/
+https://stackabuse.com/hierarchical-clustering-with-python-and-scikit-learn/
